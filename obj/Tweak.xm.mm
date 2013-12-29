@@ -1,6 +1,6 @@
 #line 1 "Tweak.xm"
-
-
+int _skipFrequencyHooked;
+BOOL _skipEnabledHooked;
 
 #include <logos/logos.h>
 #include <substrate.h>
@@ -12,29 +12,29 @@ static void (*_logos_orig$_ungrouped$RadioStation$setSkipFrequency$)(RadioStatio
 
 static void _logos_method$_ungrouped$RadioStation$setSkipFrequency$(RadioStation* self, SEL _cmd, int arg1) {
 
+_skipFrequencyHooked = MSHookIvar<int>(self, "skipFrequency");
+
+_skipFrequencyHooked = 99;
 
 
-
-
-    
-    _logos_orig$_ungrouped$RadioStation$setSkipFrequency$(self, _cmd, 99);
+_logos_orig$_ungrouped$RadioStation$setSkipFrequency$(self, _cmd, 99);
 }
 
 static void _logos_method$_ungrouped$RadioStation$setSkipEnabled$(RadioStation* self, SEL _cmd, BOOL arg1) {
+    
+_skipEnabledHooked = MSHookIvar<BOOL>(self, "skipEnabled");
+    
+    _skipEnabledHooked = YES;
 
-
-
-
-
-    _logos_orig$_ungrouped$RadioStation$setSkipEnabled$(self, _cmd, YES);
+_logos_orig$_ungrouped$RadioStation$setSkipEnabled$(self, _cmd, YES);
 }
 
 static void _logos_method$_ungrouped$RadioStation$setSkipIdentifier$(RadioStation* self, SEL _cmd, id arg1) {
-    _logos_orig$_ungrouped$RadioStation$setSkipIdentifier$(self, _cmd, nil);
+_logos_orig$_ungrouped$RadioStation$setSkipIdentifier$(self, _cmd, nil);
 }
 
 static void _logos_method$_ungrouped$RadioStation$setSkipTimestamps$(RadioStation* self, SEL _cmd, id arg1) {
-    _logos_orig$_ungrouped$RadioStation$setSkipTimestamps$(self, _cmd, nil);
+_logos_orig$_ungrouped$RadioStation$setSkipTimestamps$(self, _cmd, nil);
 }
 
 

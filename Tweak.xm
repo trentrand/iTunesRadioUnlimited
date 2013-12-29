@@ -1,11 +1,11 @@
-NSString *_skipFrequencyHooked;
-bool *_skipEnabledHooked;
+int _skipFrequencyHooked;
+BOOL _skipEnabledHooked;
 
 %hook RadioStation
 
 - (void)setSkipFrequency:(int)arg1 {
 // 'Hook' the variable
-_skipFrequencyHooked = MSHookIvar<int *>(self, "skipFrequency");
+_skipFrequencyHooked = MSHookIvar<int>(self, "skipFrequency");
 // The name of the hooked variable does not need to be the same
 _skipFrequencyHooked = 99;
 
@@ -14,10 +14,10 @@ _skipFrequencyHooked = 99;
 }
 
 - (void)setSkipEnabled:(BOOL)arg1 {
-// 'Hook' the variable
-_skipEnabledHooked = MSHookIvar<bool *>(self, "skipEnabled");
-// The name of the hooked variable does not need to be the same
-_skipEnabledHooked = YES;
+    // 'Hook' the variable
+_skipEnabledHooked = MSHookIvar<BOOL>(self, "skipEnabled");
+    // The name of the hooked variable does not need to be the same
+    _skipEnabledHooked = YES;
 
 %orig(YES);
 }
