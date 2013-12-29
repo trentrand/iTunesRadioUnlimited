@@ -1,0 +1,9 @@
+Package: com.appliesinc.itunesradiounlimited
+Name: Itunes Radio Unlimited
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Trent M Rand
+Author: Trent M Rand
+Section: Tweaks
