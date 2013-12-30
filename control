@@ -3,7 +3,7 @@ Name: Itunes Radio Unlimited
 Depends: mobilesubstrate
 Version: 0.0.1
 Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
-Maintainer: Trent M Rand
-Author: Trent M Rand
+Description: Adds Unlimited Skips and an Ad-Free Experience to iTunes Radio!
+Maintainer: Applies Inc
+Author: Applies Inc
 Section: Tweaks
