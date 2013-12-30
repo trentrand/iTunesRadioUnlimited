@@ -1,9 +1,10 @@
 Package: com.appliesinc.itunesradiounlimited
 Name: Itunes Radio Unlimited
 Depends: mobilesubstrate
-Version: 1.0.0
 Architecture: iphoneos-arm
 Description: Adds Unlimited Skips and an Ad-Free Experience to iTunes Radio!
 Maintainer: Applies Inc
 Author: Applies Inc
 Section: Tweaks
+Version: 0.0.1-1
+Installed-Size: 16
