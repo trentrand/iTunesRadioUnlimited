@@ -1,13 +1,13 @@
-int _skipFrequencyHooked;
+//int _skipFrequencyHooked;
 BOOL _skipEnabledHooked;
 
 %hook RadioStation
 
 - (void)setSkipFrequency:(int)arg1 {
-// 'Hook' the variable
-_skipFrequencyHooked = MSHookIvar<int>(self, "skipFrequency");
-// The name of the hooked variable does not need to be the same
-_skipFrequencyHooked = 99;
+//// 'Hook' the variable
+//_skipFrequencyHooked = MSHookIvar<int>(self, "skipFrequency");
+//// The name of the hooked variable does not need to be the same
+//_skipFrequencyHooked = 99;
 
 //Set original skip frequency to 99
 %orig(99);
@@ -22,9 +22,9 @@ _skipEnabledHooked = MSHookIvar<BOOL>(self, "skipEnabled");
 %orig(YES);
 }
 
-- (void)setSkipIdentifier:(id)arg1 {
-%orig(nil);
-}
+//- (void)setSkipIdentifier:(id)arg1 {
+//%orig(nil);
+//}
 
 - (void)setSkipTimestamps:(id)arg1 {
 %orig(nil);
