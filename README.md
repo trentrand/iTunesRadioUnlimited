@@ -6,20 +6,21 @@ A jailbreak tweak to get rid of the annoying ads and skip limits of iTunes Radio
 ![demo](http://media.idownloadblog.com/wp-content/uploads/2014/03/iTunes-Radio-Unlimited.png)
 
 
-###USAGE
+### Usage
 
-__Download this tweak on Cydia (Jailbreak required)__
+Download this tweak on Cydia (Jailbreak required)
 
-###DOWNLOAD COUNT (_OVER 500k!_)
-http://apt.thebigboss.org/stats.php?dev=appliesinc
+__DOWNLOAD COUNT (_OVER 610k!_)__
 
-###TROUBLESHOOTING
+Download statistics: http://apt.thebigboss.org/stats.php?dev=appliesinc
+
+### Troubleshooting
 **Skip limit present? Ads being displayed?**
 
 No problem, just send me a message and I will personally assist you in fixing these issues.
 
 
-###WANT TO CONTRIBUTE?
+### Want to contribute?
 Feel free to send a pull request, I'd be more than happy to merge!
 
 
